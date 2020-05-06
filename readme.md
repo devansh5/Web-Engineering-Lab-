@@ -1,1 +1,7 @@
-<h1>This is Web Engineering Lab Work</h1>
+<h1>Web Engineering Lab</h1>
+
+<ol>
+<li>Include practical </li>
+<li>Html,CSS,Js</li>
+<li>Backend:-Java Servelet</li>
+</ol>
