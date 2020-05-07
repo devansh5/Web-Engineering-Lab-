@@ -1,15 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Country-Capital</title>
 </head>
 <style>
-    body{
-        background: linear-gradient(to right,rgb(30, 126, 167),rgb(213, 167, 167));
+    body {
+        background: linear-gradient(to right, rgb(30, 126, 167), rgb(213, 167, 167));
     }
-    h1{
+
+    h1 {
         color: rgb(57, 226, 167);
         text-align: center;
         font-size: 45px;
@@ -18,57 +20,65 @@
         text-transform: uppercase;
         letter-spacing: 3px;
     }
-    p{
+
+    p {
         text-align: center;
         margin: 25px;
         font-size: 20px;
         font-weight: 500;
         color: rgb(248, 229, 229);
     }
-    .optionselect{
+
+    .optionselect {
         text-align: center;
-        margin-top:80px ;
+        margin-top: 80px;
     }
-    select{
+
+    select {
         width: 50%;
-        height: 50px;   
+        height: 50px;
     }
-    select{
+
+    select {
         color: darkcyan;
         text-align: center;
         font-size: 35px;
     }
-    option{
+
+    option {
         text-align: center;
     }
-    .output{
+
+    .output {
         font-size: 40px;
         margin-left: 45%;
         color: cornsilk;
     }
 </style>
+
 <body>
     <h1>Country And It's Capitals</h1>
     <p>Select the Country in the option given you will get the Capital as a result</p>
     <div class="optionselect">
-    <select name="countr" id="cit" onchange="capitalshow(this)">
-        <option value="">Select</option>
-        <option class="special" value="Washington,D.C">America</option>
-        <option class="special" value="Berlin">Germany</option>
-        <option class="special" value="Tehran">Iran</option>
-        <option class="special" value="Madrid">Spain</option>
-        <option  class="special" value="Moscow">Russia</option>
-    </select>
+        <select name="countr" id="cit" onchange="capitalshow(this)">
+            <option value="">Select</option>
+            <option class="special" value="Washington,D.C">America</option>
+            <option class="special" value="Berlin">Germany</option>
+            <option class="special" value="Tehran">Iran</option>
+            <option class="special" value="Madrid">Spain</option>
+            <option class="special" value="Moscow">Russia</option>
+        </select>
     </div>
     <span class="output">
 
     </span>
 
     <script>
-        function capitalshow(selectElement){
-            output=selectElement.options[selectElement.selectedIndex].value;
+        function capitalshow(selectElement) {
+            output = selectElement.options[selectElement.selectedIndex].value;
             document.querySelector('.output').textContent = output;
         }
     </script>
 </body>
+
 </html>

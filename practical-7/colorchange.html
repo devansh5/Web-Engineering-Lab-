@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pract-7-Color</title>
+    <style>
+        body{
+            background-color:black ;
+        }
+        h1{
+            text-align: center;
+            color: rgb(218, 81, 76);
+            margin:30px;
+        }
+        .clickme{
+        text-align: center;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+        margin-top:100px;  
+        }
+        button{
+        padding: 20px;
+        width: 30%;
+        color:black;
+        font-size: 25px;
+        background-color: rgb(105, 191, 168);
+        }
+    </style>
+</head>
+<body>
+    <h1>Click on the button to change the color</h1>
+    <div class="clickme">
+        <button onclick="colorchange()">Click me</button>
+    </div>
+    
+    <script>
+        
+
+        function colorchange(){
+            if(document.body.style.backgroundColor=="black")
+            { 
+                document.body.style.backgroundColor="#9fff9c";
+            }else{
+                document.body.style.backgroundColor="black";
+            }
+            
+        }
+        
+    </script>
+    
+</body>
+</html>
