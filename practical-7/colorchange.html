@@ -33,10 +33,9 @@
     <div class="clickme">
         <button onclick="colorchange()">Click me</button>
     </div>
-    
-    <script>
-        
 
+
+    <script>
         function colorchange(){
             if(document.body.style.backgroundColor=="black")
             { 
@@ -46,7 +45,9 @@
             }
             
         }
-        
+        document.addEventListener("DOMContentLoaded",function(){
+            document.body.style.backgroundColor="red";
+        })
     </script>
     
 </body>
